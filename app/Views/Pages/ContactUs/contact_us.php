@@ -246,10 +246,42 @@
         </div>
     </div>
 
-    <!-- Contact Sections -->
-    <div class="team-area pt-60 pb-60">
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="contact-form-wrapper">
+                        <h3 class="text-center mb-3" style="color:#d32f2f;font-weight:700;">Get in Touch</h3>
+                        <p class="text-center mb-4" style="color:#666;">Have any questions? Fill the form below and we’ll get back to you soon.</p>
 
+                        <form action="<?= base_url('public/submit') ?>" method="post" class="contact-us-form">
+                            <div class="row g-3">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <textarea name="message" class="form-control" rows="3" placeholder="Enter Message" required></textarea>
+                                </div>
+                                <div class="col-md-12 text-center mt-3">
+                                    <button type="submit" class="btn btn-submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="container">
             <!-- Section 1 -->
             <div class="contact-box">
                 <div class="contact-map">
@@ -291,113 +323,79 @@
                     <p><i class="fa fa-mobile"></i> +91 85915 28918</p>
                 </div>
             </div>
-
         </div>
-
-        <div class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-grid">
-                            <!-- Account Related Work -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-user-circle"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Account Related Work</h4>
-                                    <a href="mailto:accounts@mppmmumbai.in">accounts@mppmmumbai.in</a>
-                                </div>
+    </div>
+    
+    <!-- Contact Sections -->
+    <div class="team-area pt-60 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-grid">
+                        <!-- Account Related Work -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user-circle"></i>
                             </div>
-
-                            <!-- Girgaum Bhavan Booking -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Girgaum Bhavan Booking Related and other Work</h4>
-                                    <a href="mailto:booking.girgaum@mppmmumbai.in">booking.girgaum@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- Matrimony Related work -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-heart"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Matrimony Related work</h4>
-                                    <a href="mailto:matrimonial@mppmmumbai.in">matrimonial@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- Andheri Bhavan Booking -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Andheri Bhavan Booking Related and other Work</h4>
-                                    <a href="mailto:booking.andheri@mppmmumbai.in">booking.andheri@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- General Enquiry -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-info-circle"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Any Type of Enquiry and all Samiti related Work</h4>
-                                    <a href="mailto:info@mppmmumbai.in">info@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- Shiksha Sahyog Samiti -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Any Types Of Enquiry Related To Shiksha Sahyog Samiti</h4>
-                                    <a href="mailto:shikshasahyog@mppmmumbai.in">shikshasahyog@mppmmumbai.in</a>
-                                </div>
+                            <div class="contact-info">
+                                <h4>Account Related Work</h4>
+                                <a href="mailto:accounts@mppmmumbai.in">accounts@mppmmumbai.in</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Contact Form Section -->
-        <div class="contact-form-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10">
-                        <div class="contact-form-wrapper">
-                            <h3 class="text-center mb-3" style="color:#d32f2f;font-weight:700;">Get in Touch</h3>
-                            <p class="text-center mb-4" style="color:#666;">Have any questions? Fill the form below and we’ll get back to you soon.</p>
+                        <!-- Girgaum Bhavan Booking -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Girgaum Bhavan Booking Related and other Work</h4>
+                                <a href="mailto:booking.girgaum@mppmmumbai.in">booking.girgaum@mppmmumbai.in</a>
+                            </div>
+                        </div>
 
-                            <form action="<?= base_url('public/submit') ?>" method="post" class="contact-us-form">
-                                <div class="row g-3">
-                                    <div class="col-md-6 mb-4">
-                                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
-                                    </div>
-                                    <div class="col-md-12 mb-4">
-                                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                                    </div>
-                                    <div class="col-md-12 mb-4">
-                                        <textarea name="message" class="form-control" rows="3" placeholder="Enter Message" required></textarea>
-                                    </div>
-                                    <div class="col-md-12 text-center mt-3">
-                                        <button type="submit" class="btn btn-submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
+                        <!-- Matrimony Related work -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Matrimony Related work</h4>
+                                <a href="mailto:matrimonial@mppmmumbai.in">matrimonial@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- Andheri Bhavan Booking -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Andheri Bhavan Booking Related and other Work</h4>
+                                <a href="mailto:booking.andheri@mppmmumbai.in">booking.andheri@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- General Enquiry -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Any Type of Enquiry and all Samiti related Work</h4>
+                                <a href="mailto:info@mppmmumbai.in">info@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- Shiksha Sahyog Samiti -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Any Types Of Enquiry Related To Shiksha Sahyog Samiti</h4>
+                                <a href="mailto:shikshasahyog@mppmmumbai.in">shikshasahyog@mppmmumbai.in</a>
+                            </div>
                         </div>
                     </div>
                 </div>

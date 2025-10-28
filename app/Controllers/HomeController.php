@@ -83,7 +83,7 @@ class HomeController extends BaseController
             'mobile' => $request->getPost('mobile'),
             'email' => $request->getPost('email'),
             'message' => $request->getPost('message'),
-            'sendTo' => 'nevimanoj@gmail.com', 
+            'sendTo' => 'mpmitsamiti@gmail.com', 
         ];
 
         $emailService = new EmailService();
