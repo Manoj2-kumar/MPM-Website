@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Libraries\EmailService;
 use App\Services\MemberService;
 
 class HomeController extends BaseController
@@ -72,6 +73,26 @@ class HomeController extends BaseController
     public function contact_us()
     {
         return view('Pages/ContactUs/contact_us');
+    }
+
+    public function submit()
+    {
+        $request = service('request');
+        $data = [
+            'name' => $request->getPost('name'),
+            'mobile' => $request->getPost('mobile'),
+            'email' => $request->getPost('email'),
+            'message' => $request->getPost('message'),
+            'sendTo' => 'nevimanoj@gmail.com', 
+        ];
+
+        $emailService = new EmailService();
+
+        if ($emailService->sendContactUsEmail($data)) {
+            return redirect()->back()->with('success', 'Your message has been sent successfully!');
+        } else {
+            return redirect()->back()->with('error', 'Failed to send your message. Please try again later.');
+        }
     }
 
     public function terms_and_condition()

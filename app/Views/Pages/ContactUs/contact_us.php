@@ -164,6 +164,7 @@
     }
 
     .btn-submit {
+        height: 56px;
         background-color: #20c997;
         border: none;
         padding: 15px 60px;
@@ -378,7 +379,7 @@
                             <h3 class="text-center mb-3" style="color:#d32f2f;font-weight:700;">Get in Touch</h3>
                             <p class="text-center mb-4" style="color:#666;">Have any questions? Fill the form below and we’ll get back to you soon.</p>
 
-                            <form action="<?= base_url('contact/submit') ?>" method="post" class="contact-us-form" id="contactForm">
+                            <form action="<?= base_url('public/submit') ?>" method="post" class="contact-us-form">
                                 <div class="row g-3">
                                     <div class="col-md-6 mb-4">
                                         <input type="text" name="name" class="form-control" placeholder="Full Name" required>
@@ -393,7 +394,7 @@
                                         <textarea name="message" class="form-control" rows="3" placeholder="Enter Message" required></textarea>
                                     </div>
                                     <div class="col-md-12 text-center mt-3">
-                                        <button type="submit" class="btn-submit">Send Message</button>
+                                        <button type="submit" class="btn btn-submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
