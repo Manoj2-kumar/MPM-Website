@@ -20,11 +20,11 @@ class MemberService
 
         $apiUrl = API_BASE_URL . 'api/get_latest_saraswani_publications';
 
-        log_message('info', 'Fetching Latest Saraswani Publications');
+        log_message('info', 'Fetching Latest Saraswani Publications' . $apiUrl);
 
         try {
             $response = $client->get($apiUrl);
-
+            log_message('info', 'Saraswani Publications Response: ' . json_encode($response, JSON_PRETTY_PRINT));
             if ($response->getStatusCode() === 200) {
                 $responseData = json_decode($response->getBody(), true);
                 log_message('info', 'Saraswani Publications Response: ' . json_encode($responseData, JSON_PRETTY_PRINT));
@@ -104,5 +104,4 @@ class MemberService
             return [];
         }
     }
-
 }

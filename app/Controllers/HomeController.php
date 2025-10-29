@@ -83,7 +83,7 @@ class HomeController extends BaseController
             'mobile' => $request->getPost('mobile'),
             'email' => $request->getPost('email'),
             'message' => $request->getPost('message'),
-            'sendTo' => 'mpmitsamiti@gmail.com', 
+            'sendTo' => 'support@mumbaimaheshwari.com',
         ];
 
         $emailService = new EmailService();
@@ -168,6 +168,20 @@ class HomeController extends BaseController
             $events = $memberService->getAllEvents($zoneId);
 
             $events = $this->filterEventsByType($events, $filter);
+
+            // Sort events by date based on filter type
+            usort($events, function ($a, $b) use ($filter) {
+                $dateA = strtotime($a['start_date']);
+                $dateB = strtotime($b['start_date']);
+
+                if ($filter === 'past') {
+                    // For past events: latest first
+                    return $dateB <=> $dateA;
+                } else {
+                    // For upcoming/all: earliest first
+                    return $dateA <=> $dateB;
+                }
+            });
         }
 
         return view('Pages/Events/events', [
@@ -179,6 +193,7 @@ class HomeController extends BaseController
     private function filterEventsByType($events, $filter)
     {
         $today = date('Y-m-d');
+
         if ($filter === 'upcoming') {
             return array_filter($events, fn($e) => $e['start_date'] >= $today);
         } elseif ($filter === 'past') {
@@ -186,7 +201,6 @@ class HomeController extends BaseController
         }
         return $events;
     }
-
 
     public function eventDetail($eventId = null)
     {

@@ -282,6 +282,10 @@
 
     <div class="contact-section">
         <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Maheshwari Bhavans in Mumbai</h2>
+                <p class="text-muted">Find contact details and directions for each Maheshwari Bhavan branch</p>
+            </div>
             <!-- Section 1 -->
             <div class="contact-box">
                 <div class="contact-map">
@@ -325,10 +329,13 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Contact Sections -->
     <div class="team-area pt-60 pb-60">
         <div class="container">
+            <div class="col-12 text-center mb-4">
+                <h2 class="fw-bold">Contact Departments of MPM Mumbai</h2>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="contact-grid">
@@ -349,7 +356,7 @@
                                 <i class="fas fa-building"></i>
                             </div>
                             <div class="contact-info">
-                                <h4>Girgaum Bhavan Booking Related and other Work</h4>
+                                <h4>Girgaum Bhavan Booking Related Work</h4>
                                 <a href="mailto:booking.girgaum@mppmmumbai.in">booking.girgaum@mppmmumbai.in</a>
                             </div>
                         </div>
@@ -371,19 +378,8 @@
                                 <i class="fas fa-building"></i>
                             </div>
                             <div class="contact-info">
-                                <h4>Andheri Bhavan Booking Related and other Work</h4>
+                                <h4>Andheri Bhavan Booking Related Work</h4>
                                 <a href="mailto:booking.andheri@mppmmumbai.in">booking.andheri@mppmmumbai.in</a>
-                            </div>
-                        </div>
-
-                        <!-- General Enquiry -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-info-circle"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h4>Any Type of Enquiry and all Samiti related Work</h4>
-                                <a href="mailto:info@mppmmumbai.in">info@mppmmumbai.in</a>
                             </div>
                         </div>
 
@@ -393,10 +389,22 @@
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
                             <div class="contact-info">
-                                <h4>Any Types Of Enquiry Related To Shiksha Sahyog Samiti</h4>
+                                <h4>Enquiry Related To Shiksha Sahyog Samiti</h4>
                                 <a href="mailto:shikshasahyog@mppmmumbai.in">shikshasahyog@mppmmumbai.in</a>
                             </div>
                         </div>
+
+                        <!-- General Enquiry -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>General Enquiry</h4>
+                                <a href="mailto:info@mppmmumbai.in">info@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

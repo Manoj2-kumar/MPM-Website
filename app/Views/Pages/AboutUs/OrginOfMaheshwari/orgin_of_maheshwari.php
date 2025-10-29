@@ -8,6 +8,13 @@
         align-items: center;
     }
 
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 420px;
+    }
+
     .about-img {
         width: 100%;
         max-width: 420px;
@@ -19,6 +26,21 @@
     .about-img:hover {
         transform: scale(1.03);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #20c997;
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     .about-content p {
@@ -109,7 +131,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img1.png') ?>" alt="Girgaon Bhavan" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/OGM/gaitore.jpg') ?>" alt="Girgaon Bhavan" class="about-img">
+                            <figcaption class="img-caption">GAITORE</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <p><strong>Culture and Special Maheshwari Festivals:</strong></p>

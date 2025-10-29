@@ -84,7 +84,7 @@
     }
 
     .scroll-arrow:hover {
-        background: #007bff;
+        background: #20c997;
         color: #fff;
     }
 
@@ -214,7 +214,7 @@
 
                     <div class="publication-scroll d-flex flex-nowrap overflow-auto" id="publicationScroll">
                         <?php foreach ($latestPublications as $pub): ?>
-                            <?php $pdfUrl = API_BASE_URL . 'public/' . $pub['document_path']; ?>
+                            <?php $pdfUrl = $pub['document_path']; ?>
                             <div class="publication-card text-center flex-shrink-0 mx-3">
                                 <div class="team-img mb-5">
                                     <img src="<?= base_url('public/assets/pdf/pdf_file_icon.png'); ?>"
@@ -229,7 +229,7 @@
 
                         <!-- View More Arrow -->
                         <div class="publication-card view-more-card flex-shrink-0 mx-3 text-center">
-                            <a href="<?= base_url('public/saraswani') ?>" class="btn btn-primary btn-sm">View More →</a>
+                            <a href="<?= base_url('public/saraswani') ?>" class="btn btn-sm">View More →</a>
                         </div>
                     </div>
 

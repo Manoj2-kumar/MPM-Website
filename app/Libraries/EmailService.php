@@ -8,7 +8,7 @@ class EmailService
     {
         $email = service('email');
 
-        $email->setFrom('info@mumbaimaheshwari.com', 'MPM Mumbai Website');
+        $email->setFrom('support@mumbaimaheshwari.com', 'MPM Mumbai Website');
         $email->setTo($data['sendTo']);
 
         $subject = 'New Enquiry from ' . $data['name'];
