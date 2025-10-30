@@ -8,6 +8,13 @@
         align-items: center;
     }
 
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 420px;
+    }
+
     .about-img {
         width: 100%;
         max-width: 420px;
@@ -19,6 +26,21 @@
     .about-img:hover {
         transform: scale(1.03);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #20c997;
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     .about-content p {
@@ -87,7 +109,7 @@
     <div class="team-area pt-60 pb-60">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                <div class="col-md-10 col-sm-10">
                     <div class="section-tittle section-tittle2 text-center mb-70">
                         <h2 class="mt-2">Terms and Conditions</h2>
                         <p>The users of Maheshwari Pragati Mandal (MPM) using this Website and Mobile App by implication, means that users have gone through and agreed & abide by following disclaimer, Terms & Conditions.</p>
@@ -98,7 +120,10 @@
             <!-- Section 1 -->
             <div class="row about-row">
                 <div class="col-md-5 text-center">
-                    <img src="<?= base_url('public/assets/img/gallery/about1.png') ?>" alt="Terms Overview" class="about-img">
+                    <figure class="image-container">
+                        <img src="<?= base_url('public/assets/img/aboutus/TC/dungarpur.jpg') ?>" alt="Terms Overview" class="about-img">
+                        <figcaption class="img-caption">DUNGARPUR - Udhaipur</figcaption>
+                    </figure>
                 </div>
                 <div class="col-md-7 about-content">
                     <h4><strong>Warranty</strong></h4>
@@ -119,7 +144,10 @@
             <!-- Section 2 -->
             <div class="row about-row flex-row-reverse">
                 <div class="col-md-5 text-center">
-                    <img src="<?= base_url('public/assets/img/gallery/about2.png') ?>" alt="Liability" class="about-img">
+                    <figure class="image-container">
+                        <img src="<?= base_url('public/assets/img/aboutus/TC/JMP.jpg') ?>" alt="Liability" class="about-img">
+                        <figcaption class="img-caption">JAG MANDIR PALACE - Udhaipur</figcaption>
+                    </figure>
                 </div>
                 <div class="col-md-7 about-content">
                     <h4><strong>Fee Refund Policy</strong></h4>

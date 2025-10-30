@@ -133,7 +133,7 @@
                     <div class="col-md-5 text-center">
                         <figure class="image-container">
                             <img src="<?= base_url('public/assets/img/aboutus/OGM/gaitore.jpg') ?>" alt="Girgaon Bhavan" class="about-img">
-                            <figcaption class="img-caption">GAITORE</figcaption>
+                            <figcaption class="img-caption">GAITORE - Jaipur</figcaption>
                         </figure>
                     </div>
                     <div class="col-md-7 about-content">

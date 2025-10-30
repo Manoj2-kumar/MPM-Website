@@ -43,4 +43,5 @@
 <script src="<?= base_url('public/assets/js/plugins.js') ?>"></script>
 <script src="<?= base_url('public/assets/js/main.js') ?>"></script>
 
-<!-- Script -->
+<!-- Alert Script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

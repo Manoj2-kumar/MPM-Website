@@ -115,7 +115,7 @@
                             <img src="<?= base_url('public/assets/img/aboutus/samitis/CB.jpg') ?>"
                                 alt="Maheshwari Pragati Mandal Mumbai"
                                 class="about-img">
-                            <figcaption class="img-caption">CHANDI BOARI</figcaption>
+                            <figcaption class="img-caption">CHANDI BOARI - Abhaneri</figcaption>
                         </figure>
                     </div>
                     <div class="col-md-7 about-content">
