@@ -123,6 +123,63 @@
         text-decoration: underline;
     }
 
+    .contact-form-section {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+    }
+
+    .contact-form-wrapper {
+        background: #fff;
+        border-radius: 16px;
+        padding: 70px 80px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-form-wrapper:hover {
+        transform: translateY(-4px);
+    }
+
+    .contact-us-form .form-control {
+        height: 65px;
+        padding: 0 20px;
+        border: 2px solid #d1d5db;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .contact-us-form .form-control:focus {
+        border-color: #20c997;
+        box-shadow: 0 0 6px rgba(211, 47, 47, 0.2);
+    }
+
+    .contact-us-form textarea {
+        min-height: 120px;
+        font-size: 16px;
+        padding: 18px 25px;
+        border-radius: 12px;
+    }
+
+    .btn-submit {
+        height: 56px;
+        background-color: #20c997;
+        border: none;
+        padding: 15px 60px;
+        border-radius: 40px;
+        font-weight: 700;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        background-color: #17a673;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
     @media (max-width: 768px) {
         .contact-grid {
             grid-template-columns: 1fr;
@@ -189,10 +246,46 @@
         </div>
     </div>
 
-    <!-- Contact Sections -->
-    <div class="team-area pt-60 pb-60">
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="contact-form-wrapper">
+                        <h3 class="text-center mb-3" style="color:#d32f2f;font-weight:700;">Get in Touch</h3>
+                        <p class="text-center mb-4" style="color:#666;">Have any questions? Fill the form below and we’ll get back to you soon.</p>
 
+                        <form action="<?= base_url('public/submit') ?>" method="post" class="contact-us-form">
+                            <div class="row g-3">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <textarea name="message" class="form-control" rows="3" placeholder="Enter Message" required></textarea>
+                                </div>
+                                <div class="col-md-12 text-center mt-3">
+                                    <button type="submit" class="btn btn-submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Maheshwari Bhavans in Mumbai</h2>
+                <p class="text-muted">Find contact details and directions for each Maheshwari Bhavan branch</p>
+            </div>
             <!-- Section 1 -->
             <div class="contact-box">
                 <div class="contact-map">
@@ -234,80 +327,84 @@
                     <p><i class="fa fa-mobile"></i> +91 85915 28918</p>
                 </div>
             </div>
-
         </div>
+    </div>
 
-        <div class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-grid">
-                            <!-- Account Related Work -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-user-circle"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Account Related Work</h4>
-                                    <a href="mailto:accounts@mppmmumbai.in">accounts@mppmmumbai.in</a>
-                                </div>
+    <!-- Contact Sections -->
+    <div class="team-area pt-60 pb-60">
+        <div class="container">
+            <div class="col-12 text-center mb-4">
+                <h2 class="fw-bold">Contact Departments of MPM Mumbai</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-grid">
+                        <!-- Account Related Work -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user-circle"></i>
                             </div>
-
-                            <!-- Girgaum Bhavan Booking -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Girgaum Bhavan Booking Related and other Work</h4>
-                                    <a href="mailto:booking.girgaum@mppmmumbai.in">booking.girgaum@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- Matrimony Related work -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-heart"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Matrimony Related work</h4>
-                                    <a href="mailto:matrimonial@mppmmumbai.in">matrimonial@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- Andheri Bhavan Booking -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Andheri Bhavan Booking Related and other Work</h4>
-                                    <a href="mailto:booking.andheri@mppmmumbai.in">booking.andheri@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- General Enquiry -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-info-circle"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Any Type of Enquiry and all Samiti related Work</h4>
-                                    <a href="mailto:info@mppmmumbai.in">info@mppmmumbai.in</a>
-                                </div>
-                            </div>
-
-                            <!-- Shiksha Sahyog Samiti -->
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Any Types Of Enquiry Related To Shiksha Sahyog Samiti</h4>
-                                    <a href="mailto:shikshasahyog@mppmmumbai.in">shikshasahyog@mppmmumbai.in</a>
-                                </div>
+                            <div class="contact-info">
+                                <h4>Account Related Work</h4>
+                                <a href="mailto:accounts@mppmmumbai.in">accounts@mppmmumbai.in</a>
                             </div>
                         </div>
+
+                        <!-- Girgaum Bhavan Booking -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Girgaum Bhavan Booking Related Work</h4>
+                                <a href="mailto:booking.girgaum@mppmmumbai.in">booking.girgaum@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- Matrimony Related work -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Matrimony Related work</h4>
+                                <a href="mailto:matrimonial@mppmmumbai.in">matrimonial@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- Andheri Bhavan Booking -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Andheri Bhavan Booking Related Work</h4>
+                                <a href="mailto:booking.andheri@mppmmumbai.in">booking.andheri@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- Shiksha Sahyog Samiti -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Enquiry Related To Shiksha Sahyog Samiti</h4>
+                                <a href="mailto:shikshasahyog@mppmmumbai.in">shikshasahyog@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
+                        <!-- General Enquiry -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>General Enquiry</h4>
+                                <a href="mailto:info@mppmmumbai.in">info@mppmmumbai.in</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

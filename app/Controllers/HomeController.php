@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Libraries\EmailService;
 use App\Services\MemberService;
 
 class HomeController extends BaseController
@@ -72,6 +73,27 @@ class HomeController extends BaseController
     public function contact_us()
     {
         return view('Pages/ContactUs/contact_us');
+    }
+
+    public function submit()
+    {
+        $request = service('request');
+        $data = [
+            'name' => $request->getPost('name'),
+            'mobile' => $request->getPost('mobile'),
+            'email' => $request->getPost('email'),
+            'message' => $request->getPost('message'),
+            'sendTo' => 'support@mumbaimaheshwari.com',
+            'cc' => ['sn.somani15@gmail.com', 'gssbpl101@gmail.com', 'arvindsanjaypandey@gmail.com'],
+        ];
+
+        $emailService = new EmailService();
+
+        if ($emailService->sendContactUsEmail($data)) {
+            return redirect()->back()->with('success', 'Your message has been sent successfully!');
+        } else {
+            return redirect()->back()->with('error', 'Failed to send your message. Please try again later.');
+        }
     }
 
     public function terms_and_condition()
@@ -147,6 +169,20 @@ class HomeController extends BaseController
             $events = $memberService->getAllEvents($zoneId);
 
             $events = $this->filterEventsByType($events, $filter);
+
+            // Sort events by date based on filter type
+            usort($events, function ($a, $b) use ($filter) {
+                $dateA = strtotime($a['start_date']);
+                $dateB = strtotime($b['start_date']);
+
+                if ($filter === 'past') {
+                    // For past events: latest first
+                    return $dateB <=> $dateA;
+                } else {
+                    // For upcoming/all: earliest first
+                    return $dateA <=> $dateB;
+                }
+            });
         }
 
         return view('Pages/Events/events', [
@@ -158,6 +194,7 @@ class HomeController extends BaseController
     private function filterEventsByType($events, $filter)
     {
         $today = date('Y-m-d');
+
         if ($filter === 'upcoming') {
             return array_filter($events, fn($e) => $e['start_date'] >= $today);
         } elseif ($filter === 'past') {
@@ -165,7 +202,6 @@ class HomeController extends BaseController
         }
         return $events;
     }
-
 
     public function eventDetail($eventId = null)
     {
