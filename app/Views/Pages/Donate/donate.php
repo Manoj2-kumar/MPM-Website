@@ -20,10 +20,10 @@
                 <!-- about-img -->
                 <div class="about-img ">
                     <div class="about-font-img d-none d-lg-block">
-                        <img src="assets/img/gallery/about2.png" alt="">
+                        <img src="<?= base_url('public/assets/img/donate/donate2.jpg') ?>" alt="" class="img-bordered">
                     </div>
                     <div class="about-back-img ">
-                        <img src="assets/img/gallery/about1.png" alt="">
+                        <img src="<?= base_url('public/assets/img/donate/donate1.jpg') ?>" alt="" class="img-bordered">
                     </div>
                 </div>
             </div>
@@ -113,6 +113,23 @@
 
     .transition {
         transition: all 0.3s ease-in-out;
+    }
+
+    .img-bordered {
+        border: 6px solid #20c997;
+        /* soft gray border */
+        border-radius: 12px;
+        /* rounded corners */
+        /* padding: 4px; */
+        /* inner spacing */
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+        /* subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-bordered:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     }
 </style>
 

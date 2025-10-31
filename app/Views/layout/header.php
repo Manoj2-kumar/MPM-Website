@@ -16,9 +16,8 @@
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
-                                    <li><a href="https://www.facebook.com/Maheshwariconnect/"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://youtube.com/@maheshwaripragatimandal8159?si=RLdS4s9tDaQjNa4I"><i class="fab fa-youtube"></i></a></li>
-                                    <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Maheshwariconnect/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://youtube.com/@maheshwaripragatimandal8159?si=RLdS4s9tDaQjNa4I" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>

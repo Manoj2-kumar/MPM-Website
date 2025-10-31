@@ -11,6 +11,10 @@ class EmailService
         $email->setFrom('support@mumbaimaheshwari.com', 'MPM Mumbai Website');
         $email->setTo($data['sendTo']);
 
+        if (!empty($data['cc'])) {
+            $email->setCC($data['cc']);
+        }
+
         $subject = 'New Enquiry from ' . $data['name'];
 
         $message = view('Pages/Emails/contact_us_email', [

@@ -84,6 +84,7 @@ class HomeController extends BaseController
             'email' => $request->getPost('email'),
             'message' => $request->getPost('message'),
             'sendTo' => 'support@mumbaimaheshwari.com',
+            'cc' => ['sn.somani15@gmail.com', 'gssbpl101@gmail.com', 'arvindsanjaypandey@gmail.com'],
         ];
 
         $emailService = new EmailService();
