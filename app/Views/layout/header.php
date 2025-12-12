@@ -31,7 +31,11 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2">
                         <div class="logo">
-                            <a href="<?= base_url('public/') ?>"><img src="<?= base_url('public/assets/img/logo-dark (1).png') ?>" alt=""></a>
+                            <a href="<?= base_url('public/') ?>">
+                                <img src="<?= base_url('public/assets/img/logo-dark (1).png') ?>"
+                                    alt=""
+                                    style="width: 100px; height: 75px; object-fit: contain;">
+                            </a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10">
