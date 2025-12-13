@@ -17,6 +17,7 @@ $routes->add('/our_bhavans', 'HomeController::our_bhavans');
 $routes->add('/our_samitis', 'HomeController::our_samitis');
 $routes->add('/orgin_of_maheshwari', 'HomeController::orgin_of_maheshwari');
 $routes->add('/contact_us', 'HomeController::contact_us');
+$routes->add('/submit', 'HomeController::submit');
 $routes->add('/terms_and_condition', 'HomeController::terms_and_condition');
 $routes->add('/privacy_policy', 'HomeController::privacy_policy');
 $routes->add('/saraswani', 'HomeController::saraswani');

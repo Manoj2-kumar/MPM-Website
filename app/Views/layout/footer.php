@@ -94,9 +94,8 @@
                                 <a href="https://wa.me/919876543210" target="_blank">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
-                                <a href="https://www.facebook.com/Maheshwariconnect/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="https://youtube.com/@maheshwaripragatimandal8159?si=RLdS4s9tDaQjNa4I"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/Maheshwariconnect/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://youtube.com/@maheshwaripragatimandal8159?si=RLdS4s9tDaQjNa4I" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>

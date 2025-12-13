@@ -7,6 +7,13 @@
         align-items: center;
     }
 
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 420px;
+    }
+
     .about-img {
         width: 100%;
         max-width: 420px;
@@ -18,6 +25,21 @@
     .about-img:hover {
         transform: scale(1.03);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #20c997;
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     h3 {
@@ -67,7 +89,7 @@
     .modern-list li {
         position: relative;
         padding: 12px 0 12px 35px;
-        line-height: 1.6;
+        line-height: 1.4;
     }
 
     .modern-list li:before {
@@ -199,7 +221,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img1.png') ?>" alt="Girgaon Bhavan" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/bhavan/TKJ.jpg') ?>" alt="Girgaon Bhavan" class="about-img">
+                            <figcaption class="img-caption">TOORIJI KA JHALRA - Jodhpur</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <h3><b>Maheshwari Pragati Mandal (Girgaon, Chirabazar)</b></h3>
@@ -224,7 +249,10 @@
             <div class="container">
                 <div class="row flex-row-reverse">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img1.png') ?>" alt="Andheri Bhavan" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/bhavan/umaid-bhawan.jpg') ?>" alt="Andheri Bhavan" class="about-img">
+                            <figcaption class="img-caption">UMAID BHAWAN - Jodhpur</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <h3><b>Borivali Plot Information</b></h3>

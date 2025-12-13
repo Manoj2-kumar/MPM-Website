@@ -229,6 +229,7 @@
                                 <div class="detail-row"><strong>Membership Code</strong><span>${member.member_code ?? '-'}</span></div>
                                 <div class="detail-row"><strong>Mobile Number</strong><span>${member.mobile ?? '-'}</span></div>
                                 <div class="detail-row"><strong>Email</strong><span>${member.email ?? '-'}</span></div>
+                                <div class="detail-row"><strong>Zone Name</strong><span>${member.zone_name ?? '-'}</span></div>
                             </div>
                         </div>
                     </div>

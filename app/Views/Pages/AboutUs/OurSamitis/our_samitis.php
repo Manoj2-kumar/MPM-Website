@@ -8,6 +8,13 @@
         align-items: center;
     }
 
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 420px;
+    }
+
     .about-img {
         width: 100%;
         max-width: 420px;
@@ -19,6 +26,21 @@
     .about-img:hover {
         transform: scale(1.03);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #20c997;
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     .about-content p {
@@ -85,11 +107,16 @@
         </div>
 
         <!-- Section 1 -->
-        <div class="service-area section-padding30">
+        <div class="team-area pt-60 pb-60">
             <div class="container">
                 <div class="row about-row">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/gallery/about1.png') ?>" alt="Maheshwari Pragati Mandal Mumbai" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/samitis/CB.jpg') ?>"
+                                alt="Maheshwari Pragati Mandal Mumbai"
+                                class="about-img">
+                            <figcaption class="img-caption">CHANDI BOARI - Abhaneri</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <p><strong>Maheshwari Pragati Mandal, Mumbai</strong> functions through its Central and Regional Samitis. For better administration, Mumbai : has been bifurcated in eight Zones.</p>

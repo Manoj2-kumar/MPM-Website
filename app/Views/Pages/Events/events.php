@@ -21,7 +21,6 @@
         color: #333;
         background-color: #fff;
         min-width: 260px;
-        /* ⬅ Increased width */
         outline: none;
         transition: all 0.2s ease;
         appearance: none;
@@ -38,7 +37,6 @@
     .search-btn {
         height: 56px;
         padding: 0 36px;
-        /* ⬅ Increased button width */
         background-color: #00c48c;
         color: #fff;
         font-weight: 600;
@@ -134,7 +132,6 @@
                 </div>
             </div>
 
-            <!-- Filter Bar -->
             <form method="get" action="<?= base_url('public/events') ?>" class="filter-bar">
                 <select class="filter-select" name="filter">
                     <option value="all" <?= $selectedFilter === 'all' ? 'selected' : '' ?>>All Events</option>

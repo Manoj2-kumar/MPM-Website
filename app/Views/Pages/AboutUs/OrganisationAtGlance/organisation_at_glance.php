@@ -8,6 +8,13 @@
         align-items: center;
     }
 
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 420px;
+    }
+
     .about-img {
         width: 100%;
         max-width: 420px;
@@ -19,6 +26,21 @@
     .about-img:hover {
         transform: scale(1.03);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #20c997;
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     /* Unified bullet style for all paragraphs */
@@ -89,7 +111,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img1.png') ?>" alt="Maheshwari Bhavan" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/OAG/Chittorgarh Fort.jpg') ?>" alt="Maheshwari Bhavan" class="about-img">
+                            <figcaption class="img-caption">CHITTORGARH FORT - Chittorgarh</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <p>A Socio Charitable Trust/Organisation established 67 years ago in the city of Mumbai.</p>
@@ -100,6 +125,8 @@
                         <p>Nearly 200 programmes are organised every year by various samitis.</p>
                         <p>Equipped with all modern amenities, Maheshwari Bhavan at Girgaum, mainly provides accommodation at concessional rate to outstation Samaj Bandhus coming for medical treatment.</p>
                         <p>A huge 5 storeys Bhavan admeasuring 40,000 square feet is available at Andheri, Link Road for organising weddings, spiritual discourses & other auspicious events by Samaj Bandhus.</p>
+                        <p>Open Plot admeasuring 36,000 square ft. is available at Borivali for members to organise various social events.</p>
+                        <p>Provides assistance to under privileged Members for their sustenance through ‘Radha Krishna Lahoti Smriti Kosh.’</p>
                     </div>
                 </div>
             </div>
@@ -110,39 +137,27 @@
             <div class="container">
                 <div class="row flex-row-reverse">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img2.png') ?>" alt="Social Welfare" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/OAG/FPPM.jpg') ?>" alt="Social Welfare" class="about-img">
+                            <figcaption class="img-caption">FATEH PRAKASH PALACE MUSEUM - Chittorgarh</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
-                        <p>Open Plot admeasuring 36,000 square ft. is available at Borivali for members to organise various social events.</p>
-                        <p>Provides assistance to under privileged Members for their sustenance through ‘Radha Krishna Lahoti Smriti Kosh.’</p>
                         <p>Provides financial assistance for medical purposes to under privileged members through Chikitsa Sahayata Kosh.</p>
                         <p>Provides assistance to people affected by natural calamities such as drought, earthquake, floods, etc.</p>
                         <p>Collects Donations from Members every year and distributes the same as loan to students for educational purposes.</p>
                         <p>Provides financial assistance through Videsh Shiksha Kosh to students going abroad for higher studies.</p>
                         <p>Fully sponsoring students’ education under ‘Students Adoption Scheme.’</p>
+                        <p>Distributes Note Books at concessional rates to school and college students every year.</p>
+                        <p>Organises Members get together, Cultural Programme and felicitates bright students with gold and silver medals every year at Annual Day Celebration.</p>
+                        <p>Distributes every year pure Saatu Churna and other products at cost price, on the occasion of Badi Teej Festival.</p>
+                        <p>Operates Homeopathy clinics at Ghatkopar, Andheri & Girgaum, physiotherapy centre at Andheri and has installed water coolers at Ghatkopar, Goregaon and Borivali as General Welfare Schemes.</p>
+                        <p>Provides financial assistance in Tribal areas to children for educational and medical purposes and distributes products useful in schools.</p>
+                        <p>Communicates with more than <strong>8,500 Members</strong> through Mandal’s monthly magazine – <strong>‘Saraswani’</strong>.</p>
                     </div>
                 </div>
             </div>
-            </section>
-
-            <!-- Section 3 -->
-            <div class="team-area pt-60 pb-60">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 text-center">
-                            <img src="<?= base_url('public/assets/img/aboutus/img3.png') ?>" alt="Maheshwari Bhavan" class="about-img">
-                        </div>
-                        <div class="col-md-7 about-content">
-                            <p>Distributes Note Books at concessional rates to school and college students every year.</p>
-                            <p>Organises Members get together, Cultural Programme and felicitates bright students with gold and silver medals every year at Annual Day Celebration.</p>
-                            <p>Distributes every year pure Saatu Churna and other products at cost price, on the occasion of Badi Teej Festival.</p>
-                            <p>Operates Homeopathy clinics at Ghatkopar, Andheri & Girgaum, physiotherapy centre at Andheri and has installed water coolers at Ghatkopar, Goregaon and Borivali as General Welfare Schemes.</p>
-                            <p>Provides financial assistance in Tribal areas to children for educational and medical purposes and distributes products useful in schools.</p>
-                            <p>Communicates with more than <strong>8,500 Members</strong> through Mandal’s monthly magazine – <strong>‘Saraswani’</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </main>
 </body>
 

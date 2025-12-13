@@ -8,6 +8,13 @@
         align-items: center;
     }
 
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 420px;
+    }
+
     .about-img {
         width: 100%;
         max-width: 420px;
@@ -19,6 +26,21 @@
     .about-img:hover {
         transform: scale(1.03);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #20c997;
+        color: #fff;
+        padding: 13px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     .about-content p {
@@ -93,7 +115,10 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img4.png') ?>" alt="Social Completeness" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/OurVision/SKN.jpg') ?>" alt="Social Completeness" class="about-img">
+                            <figcaption class="img-caption">SONIJI KI NASIYAN - Ajmer</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <p><strong>1. Social Completeness</strong> — The Samaj to protect and preserve its traditional culture, values, faith and dignity while adopting need-based changes to continue to march forward towards social completeness.</p>
@@ -111,7 +136,10 @@
             <div class="container">
                 <div class="row flex-row-reverse">
                     <div class="col-md-5 text-center">
-                        <img src="<?= base_url('public/assets/img/aboutus/img5.png') ?>" alt="Education & Values" class="about-img">
+                        <figure class="image-container">
+                            <img src="<?= base_url('public/assets/img/aboutus/OurVision/ADKJ.jpg') ?>" alt="Education & Values" class="about-img">
+                            <figcaption class="img-caption">ADHAI-DIN-KA-JHONPRA - Ajmer</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-7 about-content">
                         <p><strong>6. Youth and Females</strong> — The Samaj to have a wide-spread participation of Youth and Ladies in the Social activities so that it can protect and preserve its traditional values, customs, faith and dignity, etc.</p>
@@ -122,7 +150,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+            </section>
     </main>
 </body>
 
